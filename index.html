@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grizzly Hack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e17d8aed91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="my-logo">
+                <img src="images2/grizzly.png" alt="logo">
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#challenges">Challenges</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>WELCOME</p>
+                <h1>TO <span>GRIZZLY HACK's HACKATHON 2024!</span><br></h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- -------------------about---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images2/brownbear.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p> Welcome to the Georgia Gwinnett College Hackathon! Join us for an exciting 1-day coding marathon where students come together to innovate, collaborate, and create solutions to real-world problems to contribute to the community. Whether you're a seasoned developer or just getting started, our hackathon is the perfect place to unleash your creativity and make a difference. Get ready to code, connect, and change the world!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">What Is Hackathon?<p>
+                        <p class="tab-links" onclick="openTab('experience')">How To Hack?</p>
+                        <p class="tab-links" onclick="openTab('education')">Judging Criteria</p>
+                        
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>&#8226; Hackathon: Collaborative event for individuals or teams</li>
+                            <li>&#8226; Short duration: Typically lasting a day or two</li>
+                            <li>&#8226; Focus: Creative projects in software development or technology</li>
+                            <li>&#8226; Activities: Brainstorming, coding, and innovation</li>
+                            <li>&#8226; Goal: Create prototypes or solutions within the event's timeframe</li>
+                            <li>&#8226; Environment: Fast-paced, fostering creativity and problem-solving</li>
+                            <li>&#8226; Themes: Often centered around specific challenges or industry topics</li>
+                            <li>&#8226; Benefits: Opportunities for networking, skill-building, and innovation</li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>&#8226; Teams up to three people (ideal team: a coder + a designer + a project manager)</li>
+                            <li>&#8226; All projects must be made here (no previous projects)</li>
+                            <li>&#8226; Go to mentors table for help if you are stuck</li>
+                            <li>&#8226; Submit by 4pm (wait for instructions)</li>
+                            <li>&#8226; Present project live to judges</li>
+                            <li>&#8226; Join Discord for instructions/updates</li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>&#8226; How complete is it?</li>
+                            <li>&#8226; How impactful?</li>
+                            <li>&#8226; How good looking?</li>
+                            <li>&#8226; How well does it fit the challenge?</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Challenges---------------------- -->
+    <div id="challenges">
+        <div class="container">
+            <h1 class="sub-title">Challenge March 30, 2024</h1>
+            <div class="challenges-list">
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Best Beginner Project</h2>
+                    <ul> 
+                        <li>First Time Hacker Only</li>
+                        <li>No Topic Limit</li>
+                        <li>Must be fully functional/complete</li>
+                        <li>Prize: Stuffed Grizzly Bear</li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Best Overall Design(Front End)</h2>
+
+                    <ul> 
+                        <li>Design a Grizzly Hacks hackathons website/plug in that would be benefitcial to the GGC community</li>
+                        <li>Prize: Stuffed Grizzly Bear</li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-folder"></i>
+                    <h2>Best Overall Project</h2>
+                    <ul>
+                        <li>Create a project that would be benefitcial to the GGC Community</li>
+                        <li>Prize: Drawing Tables</li>
+
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Side Challenge: Data Science</h2>
+                    <ul>
+                        <li>Help understand how neurons work: What is influencing a simple neuron system?</li>
+                        <li>Use data from the .csv file provided</li>
+                        <li>Prize: Drawing Tables</li>
+
+                    </ul>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <h2>Helping Hispanic Communities</h2>
+                        <ul>
+                            <li>Spanish/English app for US education system</li>
+                            <li>See Discord channel #challenge-hispanic</li>
+                            <li>Mentors: SHPE club + GH officer Marco Chairez</li>
+                            <li>Prize: Kitty Speakers & Tshirt</li>
+    
+                        </ul>
+                        <a href="#">Learn more</a>
+                    </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- -------------------Schedules---------------------- -->
+<div id="schedule">
+    <div class="container">
+        <h1 class="sub-title">Schedule</h1>
+        <table class="schedule-table">
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>Check in</td>
+                <td>Lobby Building B</td>
+            </tr>
+            <tr>
+                <td>9:30 AM</td>
+                <td>Open Registration</td>
+                <td>Lobby Building B</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Team Breakout groups</td>
+                <td>Room C</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>HTML/CSS</td>
+                <td>Room B-1500</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>React</td>
+                <td>Room B-1600</td>
+            </tr>
+            <tr>
+                <td>12:30 PM</td>
+                <td>Lunch Break</td>
+                <td>Lobby Building B</td>
+            </tr>
+            <tr>
+                <td>1:30 PM</td>
+                <td>Reverse Engineering Pt.1</td>
+                <td>Room B-1500</td>
+            </tr>
+            <tr>
+                <td>2:30 PM</td>
+                <td>Networking/Game</td>
+                <td>Lobby Building B</td>
+            </tr>
+            <tr>
+                <td>3:00 PM</td>
+                <td>Reverse Engineering Pt.2</td>
+                <td>Room B-1500</td>
+            </tr>
+            <tr>
+                <td>4:00 PM</td>
+                <td>Submissions Due!</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4:30 PM</td>
+                <td>Judging</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5:30 PM</td>
+                <td>Closing Ceremony</td>
+                <td>Lobby Building B</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- -------------------Sponsors---------------------- -->
+<div id="sponsors">
+    <div class="container">
+        <h1 class="sub-title">Sponsors</h1>
+        <div class="donor-list">
+            <div class="donor">
+                <img src="images2/SHPE-1.jpeg">
+                <div class="layer">
+                    <h3>Society for Hispanic Professional Engineers</h3>
+                    <ul>
+                        <li>Inclusivity: We welcome all students, from beginners to seasoned professionals, with open arms.</li>
+                        <li>Effective Training: Get the skills and knowledge you need to excel in STEM fields.</li>
+                        <li>Mentorship: Connect with experienced professionals and supportive peers.</li>
+                        <li>Vibrant community: Join a network of like-minded individuals who share your passion.</li>
+                    </ul>
+    
+                    <a href="https://shpe.org/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="donor">
+                <img src="images2/Grizzl6.webp">
+                <div class="layer">
+                    <h3>GGC Faculty</h3>
+                    <h3>TOP DONORS:</h3>
+    <ul>
+    <li>Anonymous</li>
+    <li>Cengiz Gunay</li>
+    <li>Josue Guzman</li>
+    <li>Nilaja Williams</li>
+    <li>Madhushri Banerjee</li>
+    <li>Wei Jin</li>
+    <li>Lissa Pollacia</li>
+    <li>Anca Doloc-Mihu</li>
+</ul>
+
+<h3>OTHER DONORS:</h3>
+<ul>
+    <li>Anonymous</li>
+    <li>Veronica Ichor</li>
+    <li>Jakes House</li>
+    <li>Hyesung Park</li>
+    <li>Anubha Mittal</li>
+    <li>Yaquan Xu</li>
+    <li>Binh Tran</li>
+</ul>
+                </div>
+            </div>
+            <div class="donor">
+                <img src="images2/company.jpeg">
+                <div class="layer">
+                    <h3>Other Organizations</h3>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.gofundme.com/f/ggc-hackathon-fundraiser" class="btn">Donate</a>
+    </div>
+</div>
+
+
+
+<!-- 
+Organizers: Include members with links to their Linked
+-->
+
+
+
+<!-- -------------------Contact---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>GrizzlyHack@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(123) 456-789</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/grizzly_hacksggc/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://discord.gg/UbvBxNZb"><i class="fa-brands fa-discord"></i></a>
+
+                </div>
+                <a href="images2/flier.png" download class="btn btn2">Download Flyer</a>
+            </div>
+
+
+            <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © by Trung Dao 2024<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+
+<!-- this script is to a google sheet, this link to my google sheet account -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_Io1F-1KGIeJ7eqSgBws9mqS0a5BYk7CbxYsNZ79zW6tJqZh1okT3Sz9ujP6AhLepMA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+
+            setTimeout(function(){msg.innerHTML = ""}, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
